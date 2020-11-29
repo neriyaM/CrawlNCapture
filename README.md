@@ -1,2 +1,2 @@
 # CrawlNCapture
-crawler to websites that capture the traffic
+Crawler to websites that capture the traffic
