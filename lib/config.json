@@ -1,0 +1,17 @@
+{
+  "TLSVersionsConfig": {
+    "1.2": {
+      "ChromePath": "resources/chrome60.exe",
+      "DriverPath": "resources/chromedriver2_33.exe"
+    },
+    "1.3": {
+      "ChromePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+      "DriverPath": "chromedriver"
+    }
+  },
+  "URLS": [
+    "https://ynet.co.il",
+    "https://walla.co.il"
+  ],
+  "CrawlTime": 10
+}
