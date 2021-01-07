@@ -2,3 +2,4 @@
 captures/
 resources/
 chromedriver.exe
+__pycache__/

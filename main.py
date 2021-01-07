@@ -15,7 +15,7 @@ def main():
     for url in config[ConfigKeys.URLS]:
         print("Start {}".format(url))
         filename = build_filename(url)
-        sniffer = Sniffer(filename, "tcp")
+        sniffer = Sniffer(filename, config[ConfigKeys.SNIFF_FILTER])
         sniffer.start()
         crawler.crawl(url, config[ConfigKeys.CRAWL_TIME], tls_config[ConfigKeys.CHROME_PATH],
                       tls_config[ConfigKeys.DRIVER_PATH])

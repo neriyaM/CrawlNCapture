@@ -13,5 +13,6 @@
     "https://ynet.co.il",
     "https://walla.co.il"
   ],
-  "CrawlTime": 10
+  "CrawlTime": 10,
+  "SniffFilter": "tcp"
 }
