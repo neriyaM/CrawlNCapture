@@ -1,9 +1,9 @@
-from lib import crawler
-from lib.sniffer import Sniffer
-from lib.utils import build_filename
+from src import crawler
+from src.sniffer import Sniffer
+from src.utils import build_filename
 import argparse
 import json
-from lib.consts import ConfigKeys
+from src.consts import ConfigKeys
 
 
 def main():
