@@ -10,8 +10,16 @@
     }
   },
   "URLS": [
-    "https://ynet.co.il",
-    "https://walla.co.il"
+    "https://gooogle.com",
+    "https://youtube.com",
+    "https://sohu.com",
+    "https://facebook.com",
+    "https://amazon.com",
+    "https://yahoo.com",
+    "https://jd.com",
+    "https://wikipedia.org",
+    "https://microsoft.com",
+    "https://instagram.com"
   ],
   "CrawlTime": 10,
   "SniffFilter": "tcp"
