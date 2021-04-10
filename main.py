@@ -4,6 +4,7 @@ from src.utils import build_filename
 import argparse
 import json
 from src.consts import ConfigKeys
+from src.cookies import from_config
 
 
 def main():
@@ -11,6 +12,8 @@ def main():
     args = parser.parse_args()
 
     config = load_config(args.config)
+    cookies_config = config[ConfigKeys.COOKIES]
+    cookies = from_config(cookies_config)
     tls_config = config[ConfigKeys.TLS_VERSIONS][args.tls_version]
     for url in config[ConfigKeys.URLS]:
         print("Start {}".format(url))
@@ -18,7 +21,7 @@ def main():
         sniffer = Sniffer(filename, config[ConfigKeys.SNIFF_FILTER])
         sniffer.start()
         crawler.crawl(url, config[ConfigKeys.CRAWL_TIME], tls_config[ConfigKeys.CHROME_PATH],
-                      tls_config[ConfigKeys.DRIVER_PATH])
+                      tls_config[ConfigKeys.DRIVER_PATH], cookies)
         sniffer.stop()
         print("Stop {}".format(url))
 

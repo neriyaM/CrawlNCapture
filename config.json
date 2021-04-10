@@ -10,16 +10,9 @@
     }
   },
   "URLS": [
-    "https://google.com",
-    "https://youtube.com",
-    "https://sohu.com",
-    "https://facebook.com",
-    "https://yahoo.com",
-    "https://jd.com",
-    "https://wikipedia.org",
-    "https://microsoft.com",
-    "https://instagram.com"
+    "https://facebook.com/NeriyaMazzuz"
   ],
-  "CrawlTime": 10,
+  "Cookies": "sb=ZI-aW9BvRfBOj33x5Vv7vYM8; c_user=1749961189; datr=rUZdX4JwkpGVnHFpSv5D2aFy; dpr=1.5; presence=C{\\\"t3\\\":[],\\\"utc3\\\":1617834371731,\\\"v\\\":1}; spin=r.1003598403_b.trunk_t.1617976059_s.1_v.2_; xs=8:9AoDdfMtBogkMQ:2:1576433006:5499:15162::AcVua5hGeYjgs5MxLjWUXhY6PzdSIdShYjnldEZ_97jJ; fr=14beTpbZN3wsKbGVw.AWXRDDwFjv3NL3Z1eVH-3OVGINk.BgcGci.HG.AAA.0.0.BgcGci.AWWyxOkr-FI",
+  "CrawlTime": 1000,
   "SniffFilter": "tcp"
 }

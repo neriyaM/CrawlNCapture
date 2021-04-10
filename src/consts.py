@@ -5,3 +5,6 @@ class ConfigKeys:
     CHROME_PATH = "ChromePath"
     DRIVER_PATH = "DriverPath"
     SNIFF_FILTER = "SniffFilter"
+    COOKIES = "Cookies"
+    COOKIE_NAME = "Name"
+    COOKIE_VALUE = "Value"
