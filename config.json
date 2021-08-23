@@ -10,15 +10,9 @@
     }
   },
   "URLS": [
-    "https://google.com",
-    "https://youtube.com",
-    "https://sohu.com",
-    "https://facebook.com",
-    "https://yahoo.com",
-    "https://jd.com",
-    "https://wikipedia.org",
-    "https://microsoft.com",
-    "https://instagram.com"
+	  "https://www.facebook.com/Netanyahu",
+	  "https://www.facebook.com/NaftaliBennett",
+	  "https://www.facebook.com/YairLapid"
   ],
   "CrawlTime": 10,
   "SniffFilter": "tcp"
