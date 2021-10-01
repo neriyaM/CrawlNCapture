@@ -11,14 +11,12 @@ def main():
     args = parser.parse_args()
 
     config = load_config(args.config)
-    tls_config = config[ConfigKeys.TLS_VERSIONS][args.tls_version]
     for url in config[ConfigKeys.URLS]:
         print("Start {}".format(url))
         filename = build_filename(url)
         sniffer = Sniffer(filename, config[ConfigKeys.SNIFF_FILTER])
         sniffer.start()
-        crawler.crawl(url, config[ConfigKeys.CRAWL_TIME], tls_config[ConfigKeys.CHROME_PATH],
-                      tls_config[ConfigKeys.DRIVER_PATH])
+        crawler.crawl(url, config[ConfigKeys.CRAWL_TIME])
         sniffer.stop()
         print("Stop {}".format(url))
 
@@ -26,7 +24,6 @@ def main():
 def create_arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', help="The path of the config file")
-    parser.add_argument('--tls_version', help="Version of TLS")
     return parser
 
 
