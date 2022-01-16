@@ -11,14 +11,15 @@ def main():
     args = parser.parse_args()
 
     config = load_config(args.config)
-    for url in config[ConfigKeys.URLS]:
-        print("Start {}".format(url))
-        filename = build_filename(url)
-        sniffer = Sniffer(filename, config[ConfigKeys.SNIFF_FILTER])
-        sniffer.start()
-        crawler.crawl(url, config[ConfigKeys.CRAWL_TIME])
-        sniffer.stop()
-        print("Stop {}".format(url))
+    for i in range(3):
+        for url in config[ConfigKeys.URLS]:
+            print("Start {}".format(url))
+            filename = build_filename(url)
+            sniffer = Sniffer(filename, config[ConfigKeys.SNIFF_FILTER])
+            sniffer.start()
+            crawler.crawl(url, config[ConfigKeys.CRAWL_TIME])
+            sniffer.stop()
+            print("Stop {}".format(url))
 
 
 def create_arg_parser():

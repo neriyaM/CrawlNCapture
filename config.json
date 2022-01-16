@@ -1,6 +1,15 @@
 {
   "URLS": [
-    "https://google.com"
+    "https://en.wikipedia.org/wiki/Annus_horribilis",
+    "https://en.wikipedia.org/wiki/Boris_Johnson",
+    "https://en.wikipedia.org/wiki/Brad_Pitt",
+    "https://en.wikipedia.org/wiki/Cameron_Boyce",
+    "https://en.wikipedia.org/wiki/Cannes_Film_Festival",
+    "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+    "https://en.wikipedia.org/wiki/Liverpool_F.C.",
+    "https://en.wikipedia.org/wiki/North_Korea",
+    "https://en.wikipedia.org/wiki/Sony_Pictures",
+    "https://en.wikipedia.org/wiki/United_States"
   ],
   "CrawlTime": 10,
   "SniffFilter": "tcp"
